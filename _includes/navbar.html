@@ -1,0 +1,26 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse justify-content-md-center" id="navbar-list">
+    <ul class="navbar-nav align-items-center">
+      {% for menuItem in site.data.site.menu %}
+      {% if forloop.index == 2 %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ menuItem.link }}">{{ menuItem.name }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/">
+          <img src="{{ site.data.site.brand-logo }}" class="nav-image d-block" alt="brand-logo" />
+        </a>
+      </li>
+      {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ menuItem.link }}">{{ menuItem.name }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

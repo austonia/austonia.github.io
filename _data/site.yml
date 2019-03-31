@@ -1,0 +1,19 @@
+#navbar section
+
+brand-logo: /img/brand-logo.png
+menu:
+  - name: Facilities
+    link:
+  
+  - name: News
+    link:
+
+  - name: Contact
+    link:
+
+  - name: Reservation
+    link:
+
+
+#cover section
+cover-bg: /img/cover-bg.jpg
