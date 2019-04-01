@@ -16,6 +16,7 @@ body{
 }
 
 .navbar{
+    padding: 0;
     .navbar-nav{
         .nav-item{
             .nav-link{
@@ -38,14 +39,48 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    .container-fluid{
-        .row{
-            .bg-overlay{
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                z-index: 1;
-                background-color: rgba(0,0,0,0.2);
+    .bg-overlay{
+        position: absolute;
+        height: inherit;
+        width: 100%;
+        background-color: rgba(0,0,0,0.3);
+    }
+    .container{
+        height: inherit;
+        .intro-container{
+            padding-top: 124px;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            .intro-header{
+                color: white;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 74px;
+                letter-spacing: 5px;
+                margin-bottom: 50px;
+            }
+            .intro-description{
+                color: white;
+                font-weight: 400;
+                line-height: 30px;
+                max-width: 60%;
+                font-size: 18px;
+                margin-bottom: 60px;
+            }
+            .intro-button{
+                display: inline-block;
+                background-color: #f4511e;
+                color: white;
+                padding: 15px 25px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 14px;
             }
         }
     }
