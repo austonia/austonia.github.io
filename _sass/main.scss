@@ -133,8 +133,7 @@ body{
     position: relative;
     .header-section{
         flex: 100%;
-        background-color: black;
-
+        background-color: #232323;
         .header{
             color: white;
             margin-top: 30px;
@@ -190,6 +189,21 @@ body{
                     }
                 }
             }
+        }
+    }
+}
+
+#instafeed{
+    position: relative;
+    .header-section{
+        flex: 100%;
+        background-color: #232323;
+        .header{
+            color: white;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            text-align: center;
         }
     }
 }

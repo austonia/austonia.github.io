@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="header-section">
+            <h4 class="header">Follow us @austonia</h4>
+        </div>
+
+        <div class="instagram-slider swiper-container">
+            <div id="instafeed" class="swiper-wrapper">
+                {% for feed in site.data.site.instafeed %}
+                <div class="swiper-slide">
+                    <a href="#" target="_blank">
+                        <img class="img-fluid d-block" src="{{ feed.image }}" />
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
