@@ -119,12 +119,23 @@ body{
             }
             .right-section{
                 position: absolute;
-                width: 100%;
-                height: 100%;
+                top: 0;
                 left: 50%;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
+                padding-left: 0;
+                padding-right: 0;
+                height: inherit;
+                .slider-about{
+                    height: inherit;
+                    .swiper-wrapper{
+                        height: inherit;
+                        .swiper-slide{
+                            height: inherit;
+                            background-size: cover;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                        }
+                    } 
+                }
             }
         }
     }

@@ -6,6 +6,14 @@
                 <p class="about-description"> {{ site.data.site.about-description }}</p>
             </div>
         </div>
-        <div class="right-section col-md-6" style="background-image: url('{{ site.data.site.about-bg }}')"></div>
+        <div class="col-md-6 right-section">
+                <div class="slider-about swiper-container">
+                    <div class="swiper-wrapper">
+                        {% for about-slider in site.data.site.about-photos %}
+                        <div class="swiper-slide" style="background-image: url('{{ about-slider.image }}')"></div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
     </div>
 </div>
