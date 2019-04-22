@@ -26,7 +26,23 @@ body{
                 font-size: 12px;
                 letter-spacing: 2px;
                 .nav-image{
-                    height: 108px;
+                    margin-left: -30px;
+                    margin-right: -30px;
+                    transition: all 500ms ease-in-out;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+.navbar-shrink{
+    background-color: #232323;
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                .nav-image{
+                    margin-top: -135px;
                 }
             }
         }
